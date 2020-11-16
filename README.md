@@ -38,3 +38,7 @@ ELSE | Se caractere anterior era nota, repete; Senão, silêncio ou pausa
 Agora com a string final em *Staccato* pronta, basta usar os métodos do *JFugue* para entregar a música para o usuário:
 - Tocar a música
 - Salvar a música em arquivo `MIDI`, nomeando caminho e nome
+
+
+### Instalação
+O projeto já vem com a biblioteca JFugue. Para instalar o banco de sons java siga esse [link](https://www.oracle.com/java/technologies/sound-banks.html)
