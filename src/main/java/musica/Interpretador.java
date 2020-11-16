@@ -55,8 +55,11 @@ public class Interpretador {
         mapeamento.put('E', new TocaNotaMusical('E'));
         mapeamento.put('F', new TocaNotaMusical('F'));
         mapeamento.put('G', new TocaNotaMusical('G'));
+        mapeamento.put('I', new MudaInstrumento((byte) 7));
         mapeamento.put('i', new MudaInstrumento((byte) 7));
+        mapeamento.put('O', new MudaInstrumento((byte) 7));
         mapeamento.put('o', new MudaInstrumento((byte) 7));
+        mapeamento.put('U', new MudaInstrumento((byte) 7));
         mapeamento.put('u', new MudaInstrumento((byte) 7));
         mapeamento.put('!', new MudaInstrumento((byte) 114));
         mapeamento.put('\n', new MudaInstrumento((byte) 15));
