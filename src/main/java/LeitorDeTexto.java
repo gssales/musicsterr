@@ -27,7 +27,7 @@ public class LeitorDeTexto {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        // TODO: 15/11/2020 return booleano 
+        // TODO: 15/11/2020 return booleano
     }
 
     public void writeFile(String path, String texto) {
