@@ -47,7 +47,7 @@ public class Leitor extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        buttonLoad.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pedro\\Desktop\\images\\buttonLoad.jpg")); // NOI18N
+        buttonLoad.setIcon(new javax.swing.ImageIcon(".\\files\\images\\buttonLoad.jpg"));
         buttonLoad.setBorderPainted(false);
         buttonLoad.setContentAreaFilled(false);
         buttonLoad.addActionListener(new java.awt.event.ActionListener() {
@@ -56,7 +56,7 @@ public class Leitor extends javax.swing.JFrame {
             }
         });
 
-        buttonSave.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pedro\\Desktop\\images\\buttonSave.jpg")); // NOI18N
+        buttonSave.setIcon(new javax.swing.ImageIcon(".\\files\\images\\buttonSave.jpg"));
         buttonSave.setBorderPainted(false);
         buttonSave.setContentAreaFilled(false);
         buttonSave.addActionListener(new java.awt.event.ActionListener() {
@@ -65,7 +65,7 @@ public class Leitor extends javax.swing.JFrame {
             }
         });
 
-        buttonPlay.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pedro\\Desktop\\images\\buttonPlay.jpg")); // NOI18N
+        buttonPlay.setIcon(new javax.swing.ImageIcon(".\\files\\images\\buttonPlay.jpg"));
         buttonPlay.setBorderPainted(false);
         buttonPlay.setContentAreaFilled(false);
         buttonPlay.addActionListener(new java.awt.event.ActionListener() {
@@ -74,7 +74,7 @@ public class Leitor extends javax.swing.JFrame {
             }
         });
 
-        buttonBack.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pedro\\Desktop\\images\\buttonBack.jpg")); // NOI18N
+        buttonBack.setIcon(new javax.swing.ImageIcon(".\\files\\images\\buttonBack.jpg"));
         buttonBack.setBorder(null);
         buttonBack.setBorderPainted(false);
         buttonBack.setContentAreaFilled(false);
@@ -84,7 +84,7 @@ public class Leitor extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pedro\\Desktop\\images\\textToMusic.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(".\\files\\images\\textToMusic.jpg"));
 
         textMusica.setColumns(20);
         textMusica.setRows(5);
@@ -102,23 +102,20 @@ public class Leitor extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(204, 204, 204)
                                 .addComponent(jLabel2)))
-                        .addGap(0, 282, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(38, 38, 38)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(buttonLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(buttonSave, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(71, 71, 71))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(45, 45, 45)
-                                .addComponent(textMusica, javax.swing.GroupLayout.PREFERRED_SIZE, 613, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(buttonSave, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(textMusica, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(264, 264, 264)
+                .addGap(240, 240, 240)
                 .addComponent(buttonPlay, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -130,22 +127,18 @@ public class Leitor extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(111, 111, 111)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(108, 108, 108))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(textMusica, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(buttonLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
-                        .addComponent(buttonPlay, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(buttonBack))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(buttonSave, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(textMusica, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonSave, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
+                .addComponent(buttonPlay, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addComponent(buttonBack)
                 .addContainerGap())
         );
 
@@ -153,7 +146,7 @@ public class Leitor extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,26 +156,26 @@ public class Leitor extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void buttonBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBackActionPerformed
+        // TODO add your handling code here:
+        new Menu().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_buttonBackActionPerformed
+
     private void buttonPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPlayActionPerformed
         // TODO add your handling code here:
         this.controller.tocaMusica();
     }//GEN-LAST:event_buttonPlayActionPerformed
-
-    private void buttonLoadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLoadActionPerformed
-        // TODO add your handling code here:
-        this.controller.carregaTexto();     
-    }//GEN-LAST:event_buttonLoadActionPerformed
 
     private void buttonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSaveActionPerformed
         // TODO add your handling code here:
         this.controller.salvaMIDI();
     }//GEN-LAST:event_buttonSaveActionPerformed
 
-    private void buttonBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBackActionPerformed
+    private void buttonLoadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLoadActionPerformed
         // TODO add your handling code here:
-        new Menu().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_buttonBackActionPerformed
+        this.controller.carregaTexto();
+    }//GEN-LAST:event_buttonLoadActionPerformed
 
     /**
      * @param args the command line arguments
