@@ -29,67 +29,95 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        logoMenu = new javax.swing.JLabel();
         buttonConverter = new javax.swing.JButton();
         buttonCredits = new javax.swing.JButton();
         buttonQuit = new javax.swing.JButton();
-        logoMenu = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setForeground(java.awt.Color.white);
 
-        buttonConverter.setText("> Convert text to music");
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        logoMenu.setBackground(new java.awt.Color(255, 255, 255));
+        logoMenu.setFont(new java.awt.Font("Source Sans Pro Black", 0, 14)); // NOI18N
+        logoMenu.setIcon(new javax.swing.ImageIcon(".\\files\\images\\menuLogo.jpg"));
+        logoMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        buttonConverter.setBackground(new java.awt.Color(255, 255, 255));
+        buttonConverter.setIcon(new javax.swing.ImageIcon(".\\files\\images\\buttonConvert.jpg"));
+        buttonConverter.setAutoscrolls(true);
+        buttonConverter.setBorderPainted(false);
+        buttonConverter.setContentAreaFilled(false);
         buttonConverter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonConverterActionPerformed(evt);
             }
         });
 
-        buttonCredits.setText("> Credits");
+        buttonCredits.setIcon(new javax.swing.ImageIcon(".\\files\\images\\buttonCredits.jpg"));
+        buttonCredits.setBorderPainted(false);
+        buttonCredits.setContentAreaFilled(false);
         buttonCredits.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonCreditsActionPerformed(evt);
             }
         });
 
-        buttonQuit.setText("> Quit");
+        buttonQuit.setIcon(new javax.swing.ImageIcon(".\\files\\images\\buttonQuit.jpg"));
+        buttonQuit.setBorderPainted(false);
+        buttonQuit.setContentAreaFilled(false);
+        buttonQuit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonQuitActionPerformed(evt);
+            }
+        });
 
-        logoMenu.setBackground(new java.awt.Color(255, 255, 255));
-        logoMenu.setFont(new java.awt.Font("Source Sans Pro Black", 0, 14)); // NOI18N
-        logoMenu.setText("Welcome to Musicsterr mctext music 2000");
-        logoMenu.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        logoMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonConverter, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonQuit, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(logoMenu)))
+                .addContainerGap(107, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(logoMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(buttonConverter, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(buttonCredits, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addComponent(buttonQuit, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(buttonConverter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(buttonCredits, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(buttonQuit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(98, 98, 98)
-                        .addComponent(logoMenu)))
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(logoMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55)
-                .addComponent(buttonConverter)
-                .addGap(27, 27, 27)
-                .addComponent(buttonCredits)
-                .addGap(35, 35, 35)
-                .addComponent(buttonQuit)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -103,10 +131,14 @@ public class Menu extends javax.swing.JFrame {
 
     private void buttonConverterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConverterActionPerformed
         // TODO add your handling code here:
-        
         new Leitor().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_buttonConverterActionPerformed
+
+    private void buttonQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonQuitActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_buttonQuitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,6 +179,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton buttonConverter;
     private javax.swing.JButton buttonCredits;
     private javax.swing.JButton buttonQuit;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel logoMenu;
     // End of variables declaration//GEN-END:variables
 }
