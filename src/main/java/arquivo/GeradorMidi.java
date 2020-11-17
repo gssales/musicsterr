@@ -8,13 +8,12 @@ import java.io.IOException;
 
 public class GeradorMidi {
     private String musicStacatto;
-    private String nomeArquivo;
-    private String caminhoArquivo;
+    private String path;
 
-    public GeradorMidi(String musicStacatto, String nomeArquivo, String caminhoArquivo) {
+    public GeradorMidi(String musicStacatto, String path) {
         this.musicStacatto = musicStacatto;
-        this.nomeArquivo = nomeArquivo;
-        this.caminhoArquivo = caminhoArquivo;
+        this.path = path;
+
     }
 
     public boolean saveMidi() {
@@ -22,7 +21,7 @@ public class GeradorMidi {
             MidiFileManager
                     .savePatternToMidi(
                             new Pattern(musicStacatto),
-                            new File(caminhoArquivo+"\\"+nomeArquivo));
+                            new File(path));
         } catch (IOException ex) {
             ex.printStackTrace();
             return false;
