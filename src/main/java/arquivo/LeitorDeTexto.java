@@ -4,7 +4,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class Arquivo {
+public class LeitorDeTexto {
     private String texto;
 
     public String getTexto() {
@@ -23,15 +23,5 @@ public class Arquivo {
             return false;
         }
          return true;
-    }
-
-    public boolean writeFile(String path, String texto) {
-        try {
-            Files.writeString(Path.of(path), texto);
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
-        }
-        return true;
     }
 }

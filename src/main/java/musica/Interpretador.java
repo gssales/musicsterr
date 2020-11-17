@@ -80,7 +80,7 @@ public class Interpretador {
         mapeamento.put(' ', new AumentaVolume());
     }
 
-    public String interpreta2(String texto) {
+    public String interpreta(String texto) {
         State state = new State();
         char[] arrayChars = texto.toCharArray();
 

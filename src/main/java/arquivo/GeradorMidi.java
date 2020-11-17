@@ -6,12 +6,12 @@ import org.jfugue.pattern.Pattern;
 import java.io.File;
 import java.io.IOException;
 
-public class ArquivoMidi {
+public class GeradorMidi {
     private String musicStacatto;
     private String nomeArquivo;
     private String caminhoArquivo;
 
-    public ArquivoMidi(String musicStacatto, String nomeArquivo, String caminhoArquivo) {
+    public GeradorMidi(String musicStacatto, String nomeArquivo, String caminhoArquivo) {
         this.musicStacatto = musicStacatto;
         this.nomeArquivo = nomeArquivo;
         this.caminhoArquivo = caminhoArquivo;

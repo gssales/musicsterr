@@ -1,13 +1,16 @@
-import arquivo.Arquivo;
-import arquivo.ArquivoMidi;
+import arquivo.LeitorDeTexto;
+import arquivo.GeradorMidi;
 import musica.Interpretador;
-import org.jfugue.player.Player;
+import musica.TocadorDeMusica;
+import javax.swing.JFileChooser;
 
 public class Main {
     public static void main(String[] args) {
-        String path = "C:\\Users\\gssales\\Projects\\java\\teste.txt";
+        String path = ".\\files\\teste.txt";
+        JFileChooser file = new JFileChooser();
+        file.setVisible(true);
 
-        Arquivo leitor = new Arquivo();
+        LeitorDeTexto leitor = new LeitorDeTexto();
         String texto;
         if (leitor.fileExists(path)) {
             if (leitor.readFile(path)) {
@@ -21,17 +24,16 @@ public class Main {
             return;
         }
 
-        String music = new Interpretador().interpreta2(texto);
+        String music = new Interpretador().interpreta(texto);
 
-        boolean m = new ArquivoMidi(music, "teste2.mid", "C:\\Users\\gssales\\Projects\\java").saveMidi();
+        boolean m = new GeradorMidi(music, "teste2.mid", ".\\files").saveMidi();
         if (m)
             System.out.println("Arquivo Salvo");
         else
             System.out.println("Erro ao salvar o arquivo");
 
         System.out.println(music);
-        Player p = new Player();
-
-        p.play(music);
+        TocadorDeMusica t = new TocadorDeMusica(music);
+        t.tocaMusica();
     }
 }
